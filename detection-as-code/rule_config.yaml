@@ -82,3 +82,6 @@ demoverse_workspace_MalwareDownload:
   revision_id: v_1718148653_445327000
   run_frequency: LIVE
   type: SINGLE_EVENT
+new_rule:
+  alerting: false
+  enabled: true

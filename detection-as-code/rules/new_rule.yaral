@@ -1,0 +1,39 @@
+rule ttp_aws_guardduty_brute_force_activity_detected {
+  internal_meta:
+    author = "dcosec"
+
+  customer_meta:
+    rule_name = "GuardDuty Brute Force"
+    description = "Amazon GuardDuty detects a brute force activity in an Amazon EC2 or Amazon RDS instance."
+    severity = "Low"
+    tactic = "TA0006"
+    technique =  "T1110"
+
+  events:
+    $e.metadata.vendor_name = "AMAZON"
+    $e.metadata.product_name = "AWS GuardDuty"
+    $e.metadata.product_event_type = /BruteForce/
+    //Filter out sample findings
+    $e.security_result.about.labels["Sample"] != "true"
+    $product_event_type = $e.metadata.product_event_type
+
+  match:
+    $product_event_type over 1h
+
+  outcome:
+    $risk_score = max(35)
+    $principal_ips = array_distinct($e.principal.ip)
+    $target_ips = array_distinct($e.target.ip)
+    $principal_ip_countries = array_distinct($e.principal.ip_geo_artifact.location.country_or_region)
+    $security_result_summary = array_distinct($e.security_result.summary)
+    $security_result_description = array_distinct($e.security_result.description)
+    $security_result_severity = array_distinct($e.security_result.severity)
+    $security_result_severity_details = array_distinct($e.security_result.severity_details)
+    $metadata_product_event_type = array_distinct($e.metadata.product_event_type)
+    $vendor_name = array_distinct($e.metadata.vendor_name)
+    $product_name = array_distinct($e.metadata.product_name)
+    $event_count = count_distinct($e.metadata.id)
+
+  condition:
+    $e
+}
