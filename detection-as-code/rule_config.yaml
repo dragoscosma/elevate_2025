@@ -1,1 +1,84 @@
-
+DCOSec_Linminer01_Auth_Detection:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-14T01:38:46.837999Z'
+  enabled: false
+  id: ru_d6865942-0dae-4f81-bbf3-341461b46cec
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_d6865942-0dae-4f81-bbf3-341461b46cec
+  revision_create_time: '2024-06-19T19:11:41.398719Z'
+  revision_id: v_1718824301_398719000
+  run_frequency: LIVE
+  type: MULTI_EVENT
+demoverse_Chrome_Browser_Alert_SideLoaded_Extensions:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-11T23:31:05.213503Z'
+  enabled: true
+  id: ru_553704ac-5ba4-4314-9b2f-902ca7907c83
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_553704ac-5ba4-4314-9b2f-902ca7907c83
+  revision_create_time: '2024-06-11T23:31:05.213503Z'
+  revision_id: v_1718148665_213503000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
+demoverse_Chrome_Browser_DLP_Alert_Paste_Content:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-11T23:30:43.254399Z'
+  enabled: true
+  id: ru_77f290b4-15a5-44ed-9152-5117b2016c0e
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_77f290b4-15a5-44ed-9152-5117b2016c0e
+  revision_create_time: '2024-06-11T23:30:43.254399Z'
+  revision_id: v_1718148643_254399000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
+demoverse_Chrome_Browser_DLP_File_Transfer_Alert:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-11T23:31:15.379759Z'
+  enabled: true
+  id: ru_bbaddca8-d34b-4d99-84f8-5dd826a91c37
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_bbaddca8-d34b-4d99-84f8-5dd826a91c37
+  revision_create_time: '2024-06-19T19:11:23.000431Z'
+  revision_id: v_1718824283_000431000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
+demoverse_safebrowsing_file_creation:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-11T23:30:48.332047Z'
+  enabled: true
+  id: ru_bf9abebb-4dd2-430c-a178-a3dc5d259427
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_bf9abebb-4dd2-430c-a178-a3dc5d259427
+  revision_create_time: '2024-06-11T23:30:48.332047Z'
+  revision_id: v_1718148648_332047000
+  run_frequency: HOURLY
+  type: MULTI_EVENT
+demoverse_user_download_executable_from_macro:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-11T23:31:00.077823Z'
+  enabled: true
+  id: ru_f3f09361-cd48-49fe-9e7d-1ef6cccea096
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_f3f09361-cd48-49fe-9e7d-1ef6cccea096
+  revision_create_time: '2025-03-18T01:50:28.964463Z'
+  revision_id: v_1742262628_964463000
+  run_frequency: LIVE
+  type: MULTI_EVENT
+demoverse_workspace_MalwareDownload:
+  alerting: true
+  archive_time: null
+  archived: false
+  create_time: '2024-06-11T23:30:53.445327Z'
+  enabled: true
+  id: ru_58b350b1-f110-42b5-b5a9-ebf70cf287a9
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_58b350b1-f110-42b5-b5a9-ebf70cf287a9
+  revision_create_time: '2024-06-11T23:30:53.445327Z'
+  revision_id: v_1718148653_445327000
+  run_frequency: LIVE
+  type: SINGLE_EVENT

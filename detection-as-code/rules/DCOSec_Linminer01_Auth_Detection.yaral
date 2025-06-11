@@ -1,0 +1,17 @@
+rule DCOSec_Linminer01_Auth_Detection {
+  // This rule matches single events. Looks for more than 1 succesful authentication within 5 minute on 
+  // the machine: Linminer01
+  meta:
+    severity = "Medium"
+
+  events:
+    $e.metadata.event_type = "USER_LOGIN"
+    $e.principal.hostname = "linminer-01"
+    $e.principal.hostname = $d
+
+  match:
+      $d over 10m
+
+  condition:
+    #e > 1
+}
