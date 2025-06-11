@@ -1,4 +1,4 @@
-rule test_rule {
+rule new_rule {
   internal_meta:
     author = "dcosec"
 
