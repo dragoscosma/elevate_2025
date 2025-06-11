@@ -1,4 +1,4 @@
-rule ttp_aws_guardduty_brute_force_activity_detected {
+rule test_rule {
   internal_meta:
     author = "dcosec"
 
