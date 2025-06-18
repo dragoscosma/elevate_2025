@@ -94,3 +94,15 @@ new_rule:
   revision_id: v_1749685117_711775000
   run_frequency: HOURLY
   type: SINGLE_EVENT
+rule_1750255656531:
+  alerting: false
+  archive_time: null
+  archived: false
+  create_time: '2025-06-18T14:07:41.416271Z'
+  enabled: false
+  id: ru_3f7fb44a-1820-48d3-b87d-42106cf7b472
+  resource_name: projects/609989051304/locations/us/instances/7e66eb85-0716-4477-8e70-7a59e2cec285/rules/ru_3f7fb44a-1820-48d3-b87d-42106cf7b472
+  revision_create_time: '2025-06-18T14:07:41.416271Z'
+  revision_id: v_1750255661_416271000
+  run_frequency: LIVE
+  type: SINGLE_EVENT
